@@ -26,7 +26,7 @@ const Header = () => {
       setSticky(offset > 100);
     };
 
-    handleResize(); // Initial check
+    handleResize();
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 

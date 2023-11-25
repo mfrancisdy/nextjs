@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 35px;
+  background-color: #212122;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.leftMenus,
+.rightIcons {
+  display: flex;
+}
+
+.leftMenus ul,
+.rightIcons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.leftMenus ul li,
+.rightIcons ul li {
+  margin-right: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.leftMenus ul li::before,
+.rightIcons ul li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e1c200;
+  transition: width 0.3s ease;
+}
+
+.leftMenus ul li:hover,
+.rightIcons ul li:hover {
+  color: #e1c200;
+}
+
+.leftMenus ul li:hover::before,
+.rightIcons ul li:hover::before {
+  width: 100%;
+}

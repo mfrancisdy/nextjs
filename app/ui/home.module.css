@@ -1,0 +1,54 @@
+.shape {
+  height: 0;
+  width: 0;
+  border-bottom: 30px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.topBar {
+  background-color: #e1c200;
+  cursor: pointer;
+  color: #212122;
+  font-weight: 700;
+}
+
+/* hero section */
+.zoomInWrapper {
+  z-index: -1;
+}
+
+.heroContainer {
+  padding: 0 40px;
+}
+
+.shopNowButton {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top, #ffffff 50%, #ffffff 50%);
+  background-size: 100% 200%;
+  transition: background 0.3s ease-out, color 0.3s ease-out;
+  color: #212122;
+}
+
+.shopNowButton:hover {
+  background-position: 0% 100%;
+  background: linear-gradient(to top, #212122 100%, #ffffff 50%);
+  color: #ffffff;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.zoomIn {
+  animation: zoomIn 5s ease-in-out;
+}
+
+/* hero section ends */
